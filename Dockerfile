@@ -11,8 +11,8 @@ ENV RUNNER_WORK_DIRECTORY="_work"
 ENV RUNNER_ALLOW_RUNASROOT=false
 ENV AGENT_TOOLS_DIRECTORY=/opt/hostedtoolcache
 
-# Install useradd
-RUN yum -y install shadow-utils
+# Install useradd and tar
+RUN yum -y install shadow-utils tar
 
 # Create a user for running actions
 RUN useradd -m actions
