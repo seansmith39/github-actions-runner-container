@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       runner_version:
-        description: 'Runner version'
+        description: 'Runner versions'
         required: true
         default: '2.298.2'
 jobs:
